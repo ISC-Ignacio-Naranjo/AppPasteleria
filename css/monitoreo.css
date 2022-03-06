@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+  }
+  #pedido {
+    position: relative;
+    left: 33%; 
+    height: 100%;
+    width: 400px;
+
+}
+
+#pedidosrealizados {
+    position: relative;
+    left: 33%; 
+    height: 100%;
+    width: 400px;
+}
+
+#pedido table{ 
+    width: 400px;
+}
+
+#pedidosrealizados{ 
+    width: 400px;
+}

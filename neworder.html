@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./layouts/header.html">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/neworder.css">
 </head>
 
 <body>
@@ -17,58 +18,88 @@
     </header>
 
     <body>
-        <section><br>
-            <h1 style="text-align: center;"> Mi Pedido</h1><br>
-            <form action="/accion.js" id="usuarioinfoform" method="post">
-                <br>
-                <h3>Nuestros Sabores</h3><br>
-                <input type="checkbox" id="topping1" name="topping1" value="moka">
-                <label for="topping1">Moka</label> &nbsp
-                <label for="mokaprecio">$100</label><br>
-                <input type="checkbox" id="topping2" name="topping2" value="chocolate">
-                <label for="topping2">Chocolate</label>
-                <label for="topping1">$50</label> &nbsp<br>
-                <input type="checkbox" id="topping3" name="topping3" value="Naranja">
-                <label for="topping3">Naranja</label>
-                <label for="topping1">$30</label> &nbsp<br>
-                <input type="checkbox" id="topping3" name="topping3" value="piña">
-                <label for="topping3">Piña</label>
-                <label for="topping1">$20</label> &nbsp<br>
-                <input type="checkbox" id="topping3" name="topping3" value="tresLeches">
-                <label for="topping3">Tres Leches</label>
-                <label for="topping1">$60</label> &nbsp<br>
-                <br><br>
+        <section id="pedido"><br> 
+            <form action="./index.html" id="usuarioinfoform" method="post">
+                <legend>Mi Pedido</legend>
+ 
+                <div id="sabdec">
+                    <h3>Sabores</h3>
+                    <label for="decoracion" > Selecciona el/los sabores de tu pastel</label><br>
+                    <input type="checkbox" id="topping1" name="topping1" value="moka">
+                    <label for="topping1">Moka</label> &nbsp
+                    <label for="mokaprecio">$100</label><br>
+                    <input type="checkbox" id="topping2" name="topping2" value="chocolate">
+                    <label for="topping2">Chocolate</label>
+                    <label for="topping1">$50</label> &nbsp<br>
+                    <input type="checkbox" id="topping3" name="topping3" value="Naranja">
+                    <label for="topping3">Naranja</label>
+                    <label for="topping1">$30</label> &nbsp<br>
+                    <input type="checkbox" id="topping3" name="topping3" value="piña">
+                    <label for="topping3">Piña</label>
+                    <label for="topping1">$20</label> &nbsp<br>
+                    <input type="checkbox" id="topping3" name="topping3" value="tresLeches">
+                    <label for="topping3">Tres Leches</label>
+                    <label for="topping1">$60</label> &nbsp<br>
+                    <br><br>
 
-                <h3>Decoracion </h3>
-                <label for="sabores" > la Decoracion de tu pastel</label><br>
-                <input type="checkbox" id="topping1" name="topping1" value="figuracarton">
-                <label for="topping1">Figuras de Carton</label>
-                <label for="topping1">$100</label> &nbsp<br>
-                <input type="checkbox" id="topping2" name="topping2" value="figurascrema">
-                <label for="topping2">Figuras con Crema</label>
-                <label for="topping1">$50</label> &nbsp<br>
-                <input type="checkbox" id="topping3" name="topping3" value="flores">
-                <label for="topping3">Flores</label>
-                <label for="topping1">$30</label> &nbsp<br>
-                <input type="checkbox" id="topping3" name="topping3" value="cerezas">
-                <label for="topping3">Cerezas</label>
-                <label for="topping1">$60</label> &nbsp<br>
-                <input type="checkbox" id="topping3" name="topping3" value="globos">
-                <label for="topping3">Globos</label>
-                <label for="topping1">$40</label> &nbsp<br><br>
+                    <h3>Decoracion </h3>
+                    <label for="decoracion" > Selecciona la Decoracion de tu pastel</label><br>
+                    <input type="checkbox" id="topping1" name="topping1" value="figuracarton">
+                    <label for="topping1">Figuras de Carton</label>
+                    <label for="topping1">$100</label> &nbsp<br>
+                    <input type="checkbox" id="topping2" name="topping2" value="figurascrema">
+                    <label for="topping2">Figuras con Crema</label>
+                    <label for="topping1">$50</label> &nbsp<br>
+                    <input type="checkbox" id="topping3" name="topping3" value="flores">
+                    <label for="topping3">Flores</label>
+                    <label for="topping1">$30</label> &nbsp<br>
+                    <input type="checkbox" id="topping3" name="topping3" value="cerezas">
+                    <label for="topping3">Cerezas</label>
+                    <label for="topping1">$60</label> &nbsp<br>
+                    <input type="checkbox" id="topping3" name="topping3" value="globos">
+                    <label for="topping3">Globos</label>
+                    <label for="topping1">$40</label> &nbsp<br><br>
+                </div>
+                <!--wsss-->
+                <legend>Informacion de contacto</legend>
+                <div class="row">
+                    <div class="col-25">
+                      <label for="name">Nombre Completo:</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="text" id="fname" name="firstname" placeholder="Introduce tu Nombre completo">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="telfono">Telefono</label>
+                    </div>
+                    <div class="col-75">
+                      <input type="number" id="telefono" name="telefono" placeholder="introduce tu telefono">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="country">Correo</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="introduce tu Correo electronico">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="descripcion">Descripcion del Pastel</label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="descripcion" name="descripcion" placeholder="Escribe descripcion sobre tu pastel" style="height:200px"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <input type="submit" value="Submit">
+                     <input type="reset" value="Reset">
+                  </div>
+                <!--klaslmlsasa-->
 
-                <label for="nombre">Nombre Completo:</label>   
-                <input type="text" id="nombre" name="nombre"> <br>
-                <label for="telefono">Telefono</label>
-                <input type="number" name="telefono" id="telefono"> <br>
-                <label for="email">Correo</label>
-                <input type="email" name="email" id="email"> <br>
-                <label for="description">Descripcion del Pastel</label>
-                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea><br>
-                <!-- <input type="text" name="descripcion" id="descripcion"> -->
-                
-                <input type="submit" value="Submit">
-                <input type="reset">
             </form> 
             <br><br>
 
